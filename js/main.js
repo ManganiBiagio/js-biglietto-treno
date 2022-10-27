@@ -59,6 +59,8 @@ function PriceTicket() {
                 price *= 0.6;
             }
             outputSpan.innerHTML = `${price.toFixed(2)} €`;
+            inputDestinazione.selectedIndex=0;
+
 
         }
 
