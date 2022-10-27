@@ -4,6 +4,8 @@ const outputSpan=document.getElementById("output-span");
 const bottoneForm=document.getElementById("bottone-form");
 const boxOutput=document.getElementById("box-output");
 
+
+
 bottoneForm.addEventListener("click",()=> PriceTicket());
 
 function PriceTicket(){
@@ -34,3 +36,15 @@ function PriceTicket(){
     }
     
 }
+
+
+class Destinazione{
+    constructor(citta,distanza){
+        this.citta=citta;
+        this.distanza=distanza;
+    }
+    
+}
+
+const ListaDestinazione=[new Destinazione("firenze",200),new Destinazione("milano",150),new Destinazione("roma",100),];
+console.log(ListaDestinazione[0].citta);
