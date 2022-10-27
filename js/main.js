@@ -58,7 +58,7 @@ function PriceTicket() {
             else if (age >= 65) {
                 price *= 0.6;
             }
-            outputSpan.innerHTML = `${price.toFixed(2)} €`;
+            outputSpan.innerHTML = `<br> Destinazione: ${ListaDestinazione[indiceSelezionato].citta} <br> prezzo:${price.toFixed(2)} €`;
             inputDestinazione.selectedIndex=0;
 
 
