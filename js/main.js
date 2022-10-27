@@ -25,7 +25,7 @@ function PriceTicket(){
             else if(age>=65){
                 price*=0.6;
             }
-            outputSpan.innerHTML=price.toFixed(2);
+            outputSpan.innerHTML=`${price.toFixed(2)} €`;
 
         }
         
