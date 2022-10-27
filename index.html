@@ -9,6 +9,43 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <main>
+        
+        <div class="container p-3 bg-light rounded-3">
+            <div >
+                <h1>Acquista il tuo biglietto</h1>
+            </div>
+            <div class="row ">
+                <div class="col">
+
+                    <form class="row gy-2 gx-3 align-items-center">
+                        <div class="col-auto">
+                            <label class="visually-hidden"  for="km">Chilometri da percorrere</label>
+                            <input type="text" class="form-control" id="km" placeholder="Chilometri da percorrere">
+                        </div>
+                        <div class="col-auto">
+                            <label class="visually-hidden" for="age">Età</label>
+                            <input type="number" class="form-control" id="age" placeholder="Età">
+                        </div>
+                        
+                        
+
+                    </form>
+                    <div class="p-3">
+                        <button class="btn btn-primary" id="bottone-form">Calcola prezzo biglietto</button>
+                        <div class="p-3" id="box-output">
+                            <div>
+                                <span class="fw-bold fs-5">il prezzo del tuo biglietto è:</span>
+                                <span id="output-span" class="fs-5"></span>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
 
 
 
