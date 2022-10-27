@@ -18,7 +18,7 @@ function PriceTicket(){
             alert("ricordati di inserire un età");
         }
         else{
-            if(age<=18){
+            if(age<18){
                 price*=0.8;
     
             }
