@@ -19,18 +19,20 @@
                 <div class="col">
 
                     <form class="row gy-2 gx-3 align-items-center">
-                        <div class="col-auto">
-                            <label class="visually-hidden"  for="km">Chilometri da percorrere</label>
-                            <input type="text" class="form-control" id="km" placeholder="Chilometri da percorrere">
-                        </div>
-                        <div class="col-auto">
+                        <div class="col-auto" id="list-box">
                             <select class="form-select form-select-lg mb-3" id="destinazione" aria-label=".form-select-lg example">
                                 <option selected>Scegli la destinazione</option>
                                 <option value="1">Firenze</option>
                                 <option value="2">Milano</option>
                                 <option value="3">Roma</option>
                               </select>
+                             <button type="button" class="btn btn-secondary" id="btn-NullDestination">Se la tua destinazione non è presente clicca qui</button> 
                         </div>
+                        <div class="col-auto " id="km-box">
+                            <label class="visually-hidden"  for="km">Chilometri da percorrere</label>
+                            <input type="text" class="form-control" id="km" placeholder="Chilometri da percorrere">
+                        </div>
+                        
                         <div class="col-auto">
                             <label class="visually-hidden" for="age">Età</label>
                             <input type="number" class="form-control" id="age" placeholder="Età">
@@ -40,7 +42,7 @@
 
                     </form>
                     <div class="p-3">
-                        <button class="btn btn-primary" id="bottone-form">Calcola prezzo biglietto</button>
+                        <button type="button" class="btn btn-primary" id="bottone-form">Calcola prezzo biglietto</button>
                         <div class="p-3" id="box-output">
                             <div>
                                 <span class="fw-bold fs-5">il prezzo del tuo biglietto è:</span>

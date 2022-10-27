@@ -4,6 +4,10 @@ const outputSpan = document.getElementById("output-span");
 const bottoneForm = document.getElementById("bottone-form");
 const boxOutput = document.getElementById("box-output");
 const inputDestinazione = document.getElementById("destinazione");
+const btnNullDestination = document.getElementById("btn-NullDestination");
+const boxKm = document.getElementById("km-box");
+const listBox = document.getElementById("list-box");
+
 class Destinazione {
     constructor(citta, distanza) {
         this.citta = citta;
@@ -20,6 +24,7 @@ console.log(ListaDestinazione[0].citta);
 
 
 bottoneForm.addEventListener("click", () => PriceTicket());
+btnNullDestination.addEventListener("click",() => AppearKm());
 
 function PriceTicket() {
     let indiceSelezionato = inputDestinazione.selectedIndex;
@@ -84,6 +89,13 @@ function PriceTicket() {
 
         }
     }
+
+}
+
+function AppearKm(){
+    boxKm.style.display="block";
+    listBox.style.display="none";
+    
 
 }
 
