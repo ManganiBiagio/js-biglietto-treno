@@ -15,13 +15,7 @@ class Destinazione {
     }
 
 }
-
-const ListaDestinazione = [new Destinazione("firenze", 200), new Destinazione("milano", 150), new Destinazione("roma", 100),];
-console.log(ListaDestinazione[0].citta);
-
-
-
-
+const ListaDestinazione = [new Destinazione("Firenze", 200), new Destinazione("Milano", 150), new Destinazione("Roma", 100),];
 
 bottoneForm.addEventListener("click", () => priceTicket());
 btnNullDestination.addEventListener("click",() => appearKm());
@@ -30,8 +24,7 @@ function priceTicket() {
     let indiceSelezionato = inputDestinazione.selectedIndex;
     let age = parseInt(inputAge.value);
     let price = (parseInt(inputKm.value)) * 0.21;
-    console.log(inputDestinazione.options);
-    console.log(indiceSelezionato);
+    
 
     if (indiceSelezionato != 0) {
         switch(indiceSelezionato){
