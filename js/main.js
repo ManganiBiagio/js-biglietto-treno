@@ -59,6 +59,7 @@ function PriceTicket() {
                 price *= 0.6;
             }
             outputSpan.innerHTML = `<br> Destinazione: ${ListaDestinazione[indiceSelezionato-1].citta} <br> prezzo:${price.toFixed(2)} €`;
+            inputDestinazione.selectedIndex=0;
             
 
 
