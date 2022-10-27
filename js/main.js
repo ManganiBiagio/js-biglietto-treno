@@ -29,13 +29,13 @@ function priceTicket() {
     if (indiceSelezionato != 0) {
         switch(indiceSelezionato){
             case 1:
-                price=ListaDestinazione[0].distanza * 0.21;
+                price=listaDestinazione[0].distanza * 0.21;
                 break;
             case 2:
-                price=ListaDestinazione[1].distanza * 0.21;
+                price=listaDestinazione[1].distanza * 0.21;
                 break;  
             case 3:
-                price=ListaDestinazione[2].distanza * 0.21;
+                price=listaDestinazione[2].distanza * 0.21;
                 break; 
 
 
@@ -51,7 +51,7 @@ function priceTicket() {
             else if (age >= 65) {
                 price *= 0.6;
             }
-            outputSpan.innerHTML = `<br> Destinazione: ${ListaDestinazione[indiceSelezionato-1].citta} <br> prezzo:${price.toFixed(2)} €`;
+            outputSpan.innerHTML = `<br> Destinazione: ${listaDestinazione[indiceSelezionato-1].citta} <br> prezzo:${price.toFixed(2)} €`;
             inputDestinazione.selectedIndex=0;
             
 
