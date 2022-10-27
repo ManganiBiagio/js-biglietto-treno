@@ -15,14 +15,14 @@ class Destinazione {
     }
 
 }
-const ListaDestinazione = [new Destinazione("Firenze", 200), new Destinazione("Milano", 150), new Destinazione("Roma", 100),];
+const listaDestinazione = [new Destinazione("Firenze", 200), new Destinazione("Milano", 150), new Destinazione("Roma", 100),];
 
-bottoneForm.addEventListener("click", () => priceTicket());
-btnNullDestination.addEventListener("click",() => appearKm());
+bottoneForm.addEventListener("click", priceTicket);
+btnNullDestination.addEventListener("click",appearKm);
 
 function priceTicket() {
-    let indiceSelezionato = inputDestinazione.selectedIndex;
-    let age = parseInt(inputAge.value);
+    const indiceSelezionato = inputDestinazione.selectedIndex;
+    const age = parseInt(inputAge.value);
     let price = (parseInt(inputKm.value)) * 0.21;
     
 
