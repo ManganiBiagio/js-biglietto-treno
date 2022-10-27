@@ -23,10 +23,10 @@ console.log(ListaDestinazione[0].citta);
 
 
 
-bottoneForm.addEventListener("click", () => PriceTicket());
-btnNullDestination.addEventListener("click",() => AppearKm());
+bottoneForm.addEventListener("click", () => priceTicket());
+btnNullDestination.addEventListener("click",() => appearKm());
 
-function PriceTicket() {
+function priceTicket() {
     let indiceSelezionato = inputDestinazione.selectedIndex;
     let age = parseInt(inputAge.value);
     let price = (parseInt(inputKm.value)) * 0.21;
@@ -95,7 +95,7 @@ function PriceTicket() {
 
 }
 
-function AppearKm(){
+function appearKm(){
     boxKm.style.display="block";
     listBox.style.display="none";
     
